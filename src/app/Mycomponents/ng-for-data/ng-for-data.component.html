@@ -1,0 +1,16 @@
+<div>
+  <h1>-------------ngFor------------</h1>
+
+  <!-- Applying Custom class based on condition     [ngClass]="{ storeRed: item.id === 2 }" -->
+  <div
+    class="loopMargin"
+    [ngClass]="{ storeRed: item.id === 2 }"
+    *ngFor="let item of storeItem"
+  >
+    <div>
+      <span> id - {{ item.id }}</span>
+      <h4>Title - {{ item.title }}</h4>
+      <p style="font-style: italic; color: red">Note : Render using ngFor</p>
+    </div>
+  </div>
+</div>

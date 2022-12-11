@@ -11,10 +11,15 @@
     <p>Medium : {{ mediaItem.medium }}</p>
     <p>Category : {{ mediaItem.category }}</p>
     <p>Year : {{ mediaItem.year }}</p>
-    <p>Watched On : {{ mediaItem.watchedOn }}</p>
+
+    <!--  checking if mediaItem.watchedOn even exist only then show it -->
+    <p *ngIf="mediaItem.watchedOn">
+      Watched On : {{ mediaItem.watchedOn | date : "shortDate" }}
+    </p>
+
     <p>Favorite : {{ mediaItem.isFavorite }}</p>
   </div>
 
   <!-- event binding  (click)="onDelete()" -->
-  <button (click)="onDelete()">delete</button>
+  <button (click)="onDelete()">delete console log only</button>
 </div>

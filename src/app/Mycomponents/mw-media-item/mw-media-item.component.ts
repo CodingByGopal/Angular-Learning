@@ -14,6 +14,7 @@ export class MwMediaItemComponent {
   }
 
   @Input() mediaItem: any;
+
   @Output() delete = new EventEmitter();
 
   onDelete() {
