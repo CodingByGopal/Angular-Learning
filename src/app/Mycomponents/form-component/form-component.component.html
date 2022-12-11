@@ -1,1 +1,23 @@
-<p>form-component works!</p>
+<form
+  #mediaItemForm="ngForm"
+  (ngSubmit)="onSubmit(mediaItemForm.value)"
+  style="margin-top: 2rem; margin-bottom: 2rem"
+>
+  <div style="display: flex; gap: 0.3rem">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" ngModel />
+  </div>
+
+  <h1>-------Handling form--------</h1>
+
+  <div style="display: flex; flex-direction: column; gap: 9px">
+    <label for="medium"> Medium</label>
+    <select name="medium" id="medium" ngModel>
+      <option value="">Please Select an option :</option>
+      <option value="Movies">Movies</option>
+      <option value="Series">Series</option>
+    </select>
+  </div>
+
+  <button style="margin-top: 1rem" type="submit">Submit</button>
+</form>
