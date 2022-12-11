@@ -1,7 +1,9 @@
 <div>
   <h2>{{ name }}</h2>
+  <!-- property binding   [textContent]="tag" -->
   <span [textContent]="tag"></span>
   <p>Was Watched {{ wasWatched() }}</p>
   <p>Lorem ipsum dolor sit.</p>
-  <button>delete</button>
+  <!-- event binding  (click)="onDelete()" -->
+  <button (click)="onDelete()">delete</button>
 </div>

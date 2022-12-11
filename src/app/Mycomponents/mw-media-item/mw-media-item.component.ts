@@ -12,4 +12,8 @@ export class MwMediaItemComponent {
   wasWatched() {
     return true;
   }
+
+  onDelete() {
+    console.log('deleted');
+  }
 }
