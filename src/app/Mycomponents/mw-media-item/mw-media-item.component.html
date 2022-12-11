@@ -4,6 +4,17 @@
   <span [textContent]="tag"></span>
   <p>Was Watched {{ wasWatched() }}</p>
   <p>Lorem ipsum dolor sit.</p>
+
+  <div>
+    <h1>--------This is media item coming from app.component.ts ----------</h1>
+    <h2>Name : {{ mediaItem.name }}</h2>
+    <p>Medium : {{ mediaItem.medium }}</p>
+    <p>Category : {{ mediaItem.category }}</p>
+    <p>Year : {{ mediaItem.year }}</p>
+    <p>Watched On : {{ mediaItem.watchedOn }}</p>
+    <p>Favorite : {{ mediaItem.isFavorite }}</p>
+  </div>
+
   <!-- event binding  (click)="onDelete()" -->
   <button (click)="onDelete()">delete</button>
 </div>
