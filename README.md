@@ -1,6 +1,6 @@
 # AngularJS Learning
 
-This is only a learing project to understand AngularJs basics
+This is only a learning project to understand AngularJs basics
 
 
 
