@@ -1,5 +1,7 @@
 <div>
-  <h2>Media Item 1</h2>
+  <h2>{{ name }}</h2>
+  <span [textContent]="tag"></span>
+  <p>Was Watched {{ wasWatched() }}</p>
   <p>Lorem ipsum dolor sit.</p>
   <button>delete</button>
 </div>
